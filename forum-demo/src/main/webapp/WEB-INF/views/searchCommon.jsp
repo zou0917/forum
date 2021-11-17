@@ -6,6 +6,9 @@
             <li role="presentation" >
                 <a  style="height:33px;width: 60px;background-color:#005959;color: white;font-weight:bold;font-size: 15px; ">论坛</a>
             </li>
+<%--            <li role="presentation" >--%>
+<%--                <a  style="height:33px;width: 75px;background-color:#005959;color: white;font-weight:bold;font-size: 15px; ">管理员</a>--%>
+<%--            </li>--%>
         </ul>
     </div>
 </div>

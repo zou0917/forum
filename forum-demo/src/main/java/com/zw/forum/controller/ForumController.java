@@ -55,7 +55,11 @@ public class ForumController {
         if((session.getAttribute("forumName")).equals("搜索结果")){
             postsList = postsService.queryByTitle(title);
         }else if ((session.getAttribute("forumName")).equals("管理帖子")){
-            postsList = postsService.queryByUserName(username);
+            if(username.equals("管理员")){
+                postsList=postsService.queryByTitle("");
+            }else {
+                postsList = postsService.queryByUserName(username);
+            }
         }else{
             postsList = postsService.selectForumPosts((String) session.getAttribute("forumName"));
         }
